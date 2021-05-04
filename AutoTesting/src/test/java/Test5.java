@@ -94,7 +94,7 @@ public class Test5 {
         driver.findElement(inputActive);
     }
 
-    @Test
+    /*@Test
     public void sendComment() throws InterruptedException {
         driver.get(getURLComment);
         String parentWindow = driver.getWindowHandle();
@@ -123,7 +123,7 @@ public class Test5 {
         post.click();
         driver.findElement(myName);
         driver.findElement(commentInfo);
-    }
+    }*/
 
     @Test
     public void searchNegative() {
