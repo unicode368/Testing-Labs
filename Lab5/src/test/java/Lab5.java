@@ -23,9 +23,14 @@ public class Lab5 {
 
     @Test
     public void extractEntities() {
-        Response r = Methods.postEntity("1");
-        r.then().statusCode(404);
+        Response r = Methods.postEntity();
+        r.then().statusCode(200);
     }
 
+    @Test
+    public void highlight() {
+        Response r = Methods.postEntity2();
+        r.then().statusCode(200);
+    }
 
 }

@@ -19,11 +19,18 @@ public class Methods {
                 .get(Config.CONCEPT_ID);
     }
 
-    public static Response postEntity(String text) {
+    public static Response postEntity() {
         return given()
-                .pathParam("concept_id", id)
+                .body(Config.JSON_BODY)
                 .when()
-                .get(Config.CONCEPT_ID);
+                .post(Config.ENTITY);
+    }
+
+    public static Response postEntity2() {
+        return given()
+                .body(Config.JSON_BODY)
+                .when()
+                .post(Config.HIGHLIGHT);
     }
 
     private static RequestSpecification given() {
