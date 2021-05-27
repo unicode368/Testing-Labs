@@ -1,0 +1,9 @@
+Feature: Concept
+  Scenario :
+    Given Connection to API with "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdSI6Imx4ZzphcGkiLCJzYyI6WyJrZzpyZWFkIiwiZXh0cmFjdGlvbjpyZWFkIl0sImFpIjoiYXBpOjBiOWQyNjE5LWJmOTMtZmEzZS1mNzdjLWE0M2MxMDBmOGYzNCIsInVpIjoidXNlcjpjMGRjMzViOC01ZGVmLTBlZWItMGEyZS0zYWRlOWVhZmRhNmYiLCJpYXQiOjE2MjAwNjY4MzV9.P3yBy8bNXFQHmR8j4_NQshg9sW0KreN0rvBLbeQs9hU"
+    When I get constraint by "lxg:350231317898"
+    Then I receive status code 200
+  Scenario :
+    Given Connection to API with "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdSI6Imx4ZzphcGkiLCJzYyI6WyJrZzpyZWFkIiwiZXh0cmFjdGlvbjpyZWFkIl0sImFpIjoiYXBpOjBiOWQyNjE5LWJmOTMtZmEzZS1mNzdjLWE0M2MxMDBmOGYzNCIsInVpIjoidXNlcjpjMGRjMzViOC01ZGVmLTBlZWItMGEyZS0zYWRlOWVhZmRhNmYiLCJpYXQiOjE2MjAwNjY4MzV9.P3yBy8bNXFQHmR8j4_NQshg9sW0KreN0rvBLbeQs9hU"
+    When I get constraint by "1"
+    Then I receive status code 200
